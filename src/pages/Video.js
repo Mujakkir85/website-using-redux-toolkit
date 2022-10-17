@@ -16,7 +16,7 @@ export default function Video() {
 
   useEffect(() => {
     dispatch(fetchVideo(videoId));
-  }, []);
+  }, [dispatch, videoId]);
 
   const { title, link, id, tags } = video || {};
 
